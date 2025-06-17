@@ -151,14 +151,14 @@ img {
   color: #136c72;
 }
 
-.col_container {
+.sidebar_container {
   flex: 1;
   background-color: #136c72;
   color: #fff;
   text-align: center;
 }
 
-.col__text__container {
+.sidebar__text__container {
   padding: 1rem;
   /* outline: 3px solid purple; */
 }
@@ -167,6 +167,21 @@ img {
   margin-bottom: 2rem;
 }
 
-.col__text {
+.sidebar__text {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .hero__text,
+  .hero__image-container {
+    width: 100%;
+  }
+
+  .hero__image-container {
+    margin-top: 2rem;
+  }
 }
