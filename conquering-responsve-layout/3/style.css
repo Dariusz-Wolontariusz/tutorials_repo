@@ -171,37 +171,25 @@ header {
   background-color: #136c72;
 }
 
+.image__container {
+    outline:#87629a solid 2px;
+}
+
 @media (min-width: 800px) {
   .nav-toggle {
     display: none;
   }
 
-  .nav {
-    visibility: visible;
-    display: flex;
-    height: auto;
-  }
-
   .row {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .image__container {
+    flex:1;
   }
 
   .hero__text {
-    width: 62%;
-  }
-
-  .hero__img {
-    width: 32%;
-    align-self: flex-start;
-    margin: 0;
-  }
-
-  .primary-content {
-    width: 62%;
-  }
-
-  .sidebar {
-    width: 32%;
+    flex: 2;
   }
 }
