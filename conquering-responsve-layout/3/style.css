@@ -51,7 +51,6 @@ header {
   background: #136c72;
   padding: 1em 0;
   text-align: center;
-  height: 100vh;
 }
 
 .nav-toggle {
@@ -132,6 +131,11 @@ header {
   color: #fff;
   font-size: 1.3rem;
   font-weight: 900;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  opacity: 0.75;
 }
 
 .nav__link--button {
