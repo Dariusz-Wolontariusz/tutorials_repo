@@ -1,0 +1,96 @@
+@import 'variables';
+@import 'setup';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-color;
+  font-size: 16px;
+  font-family: $font-stack;
+  color: $ternary-color;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  @include flex-center;
+  height: 97vh;
+}
+
+.card__container {
+  border: 2px solid $ternary-color;
+  max-width: 375px;
+  width: 100%;
+  background-color: $secondary-color;
+  padding: 1.3em;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px 0px $ternary-color;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    h1 {
+      color: $primary-color;
+    }
+  }
+}
+
+.image__container {
+  margin-bottom: 1.3rem;
+  border-radius: 15px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 1.3em;
+
+  span {
+    background-color: $primary-color;
+    font-weight: 800;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+
+  time {
+    font-weight: 500;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: $quarterly-color;
+  }
+}
+
+.author__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-weight: 800;
+  }
+}
+
+@import 'desktop';

@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-size: 16px;
+  font-family: 'Figtree', sans-serif;
+  color: hsl(0, 0%, 7%);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+
+.card__container {
+  border: 2px solid hsl(0, 0%, 7%);
+  max-width: 375px;
+  width: 100%;
+  background-color: #fff;
+  padding: 1.3em;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+  cursor: pointer;
+}
+.card__container:focus h1,
+.card__container:hover h1 {
+  color: hsl(47, 88%, 63%);
+}
+
+.image__container {
+  margin-bottom: 1.3rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.image__container img {
+  object-fit: cover;
+  display: block;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 1.3em;
+}
+.content__container span {
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.content__container time {
+  font-weight: 500;
+}
+.content__container h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.content__container p {
+  color: hsl(0, 0%, 42%);
+}
+
+.author__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.author__container p {
+  font-weight: 800;
+}
+
+@media (min-width: 720px) {
+  .card__container {
+    max-width: 400px;
+  }
+} /*# sourceMappingURL=style.css.map */
