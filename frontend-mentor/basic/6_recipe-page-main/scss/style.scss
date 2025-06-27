@@ -16,6 +16,7 @@ body {
 .container {
   background-color: $stone_100;
   width: 100vw;
+  // min-height: 100vh;
 }
 
 img {
@@ -26,8 +27,11 @@ article {
   width: 375px;
   background-color: $white;
   margin: 0 auto;
+  padding-bottom: 1rem;
   font-family: $main-font;
 }
+
+@import '_desktop';
 
 section {
   margin: 1.9rem;
@@ -57,7 +61,7 @@ section {
 
 .preparation-time {
   background-color: $rose_50;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   margin-top: 2rem;
   border-radius: 13px;
 
@@ -139,4 +143,38 @@ section {
   h2 {
     margin-bottom: 1.2rem;
   }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  dt {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid $stone_150;
+  }
+
+  dd {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: $brown_800;
+    border-bottom: 1px solid $stone_150;
+  }
+}
+
+footer {
+  background-color: $stone_100;
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
 }
