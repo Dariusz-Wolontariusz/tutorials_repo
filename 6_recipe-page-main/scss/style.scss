@@ -1,0 +1,184 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  // overflow-y: hidden;
+  background-color: $stone_100;
+  padding: 3rem 0 0 0;
+}
+
+.container {
+  width: 100vw;
+  // min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  width: 375px;
+  background-color: $white;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  font-family: $main-font;
+}
+
+@import '_desktop';
+
+section {
+  margin: 1.9rem;
+
+  h1 {
+    font-size: 2rem;
+    font-family: $title-font;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.8rem;
+    font-family: $title-font;
+    font-weight: 400;
+    color: $brown_800;
+  }
+
+  p,
+  li {
+    color: $stone_600;
+    font-weight: 400;
+  }
+}
+
+.description__title {
+  margin-bottom: 1rem;
+}
+
+.preparation-time {
+  background-color: $rose_50;
+  padding: 1rem 1rem 0 1rem;
+  margin-top: 2rem;
+  border-radius: 13px;
+
+  .preparation-time__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $rose_800;
+  }
+
+  .first__word {
+    font-weight: 700;
+  }
+
+  ul {
+    list-style-position: outside;
+    padding: 1rem;
+  }
+
+  li {
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+
+    &::marker {
+      color: $rose_800;
+    }
+  }
+}
+
+.ingredients {
+  border-bottom: 1px $stone_150 solid;
+
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  ul {
+    list-style-position: outside;
+    padding: 0 0 1.5rem 1rem;
+  }
+
+  li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+
+    &:marker {
+      color: $brown_800;
+    }
+  }
+}
+
+.instructions {
+  border-bottom: 1px solid $stone_150;
+
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  ol {
+    list-style-position: outside;
+    padding: 0 0 1.5rem 1rem;
+  }
+
+  li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+
+    &::marker {
+      color: $brown_800;
+      font-weight: 600;
+    }
+
+    .step {
+      font-weight: 600;
+    }
+  }
+}
+
+.nutrition {
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  dt {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid $stone_150;
+  }
+
+  dd {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: $brown_800;
+    border-bottom: 1px solid $stone_150;
+  }
+}
+
+footer {
+  background-color: $stone_100;
+  padding: 2rem;
+
+  p {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}

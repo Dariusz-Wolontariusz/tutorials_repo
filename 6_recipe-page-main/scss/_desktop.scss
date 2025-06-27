@@ -1,0 +1,19 @@
+@media (min-width: 720px) {
+  article {
+    width: 720px;
+    padding: 1.9rem;
+    border-radius: 15px;
+
+    section {
+      margin: 1.9rem 0;
+    }
+
+    .image__container {
+      // margin: 1.9rem;
+      overflow: hidden;
+      border-radius: 15px;
+
+      
+    }
+  }
+}
