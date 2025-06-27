@@ -8,10 +8,11 @@
 
 body {
   font-size: 16px;
+  background-color: hsl(30, 54%, 90%);
+  padding: 3rem 0 0 0;
 }
 
 .container {
-  background-color: hsl(30, 54%, 90%);
   width: 100vw;
 }
 
@@ -30,10 +31,15 @@ article {
 @media (min-width: 720px) {
   article {
     width: 720px;
+    padding: 1.9rem;
     border-radius: 15px;
   }
-  article img {
-    margin: 1.9rem;
+  article section {
+    margin: 1.9rem 0;
+  }
+  article .image__container {
+    overflow: hidden;
+    border-radius: 15px;
   }
 }
 section {
@@ -155,7 +161,9 @@ section li {
 
 footer {
   background-color: hsl(30, 54%, 90%);
-  width: 100%;
   padding: 2rem;
+}
+footer p {
+  max-width: fit-content;
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

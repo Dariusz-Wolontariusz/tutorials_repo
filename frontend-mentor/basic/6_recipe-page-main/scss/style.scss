@@ -11,10 +11,11 @@
 body {
   font-size: 16px;
   // overflow-y: hidden;
+  background-color: $stone_100;
+  padding: 3rem 0 0 0;
 }
 
 .container {
-  background-color: $stone_100;
   width: 100vw;
   // min-height: 100vh;
 }
@@ -174,7 +175,10 @@ section {
 
 footer {
   background-color: $stone_100;
-  width: 100%;
   padding: 2rem;
-  margin: 0 auto;
+
+  p {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
 }
