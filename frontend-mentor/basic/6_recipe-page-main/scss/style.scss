@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *::after,
 *::before {
@@ -7,4 +9,134 @@
 }
 
 body {
+  font-size: 16px;
+  // overflow-y: hidden;
+}
+
+.container {
+  background-color: $stone_100;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  width: 375px;
+  background-color: $white;
+  margin: 0 auto;
+  font-family: $main-font;
+}
+
+section {
+  margin: 1.9rem;
+
+  h1 {
+    font-size: 2rem;
+    font-family: $title-font;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.8rem;
+    font-family: $title-font;
+    font-weight: 400;
+    color: $brown_800;
+  }
+
+  p,
+  li {
+    color: $stone_600;
+    font-weight: 400;
+  }
+}
+
+.description__title {
+  margin-bottom: 1rem;
+}
+
+.preparation-time {
+  background-color: $rose_50;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 13px;
+
+  .preparation-time__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $rose_800;
+  }
+
+  .first__word {
+    font-weight: 700;
+  }
+
+  ul {
+    list-style-position: outside;
+    padding: 1rem;
+  }
+
+  li {
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+
+    &::marker {
+      color: $rose_800;
+    }
+  }
+}
+
+.ingredients {
+  border-bottom: 1px $stone_150 solid;
+
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  ul {
+    list-style-position: outside;
+    padding: 0 0 1.5rem 1rem;
+  }
+
+  li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+
+    &:marker {
+      color: $brown_800;
+    }
+  }
+}
+
+.instructions {
+  border-bottom: 1px solid $stone_150;
+
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  ol {
+    list-style-position: outside;
+    padding: 0 0 1.5rem 1rem;
+  }
+
+  li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+
+    &::marker {
+      color: $brown_800;
+      font-weight: 600;
+    }
+
+    .step {
+      font-weight: 600;
+    }
+  }
+}
+
+.nutrition {
+  h2 {
+    margin-bottom: 1.2rem;
+  }
 }

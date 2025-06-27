@@ -4,4 +4,118 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  background-color: hsl(30, 54%, 90%);
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  width: 375px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  font-family: "Outfit";
+}
+
+section {
+  margin: 1.9rem;
+}
+section h1 {
+  font-size: 2rem;
+  font-family: "Young serif";
+  font-weight: 400;
+}
+section h2 {
+  font-size: 1.8rem;
+  font-family: "Young serif";
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+section p,
+section li {
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+
+.description__title {
+  margin-bottom: 1rem;
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 13px;
+}
+.preparation-time .preparation-time__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+}
+.preparation-time .first__word {
+  font-weight: 700;
+}
+.preparation-time ul {
+  list-style-position: outside;
+  padding: 1rem;
+}
+.preparation-time li {
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+}
+.preparation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients {
+  border-bottom: 1px hsl(30, 18%, 87%) solid;
+}
+.ingredients h2 {
+  margin-bottom: 1.2rem;
+}
+.ingredients ul {
+  list-style-position: outside;
+  padding: 0 0 1.5rem 1rem;
+}
+.ingredients li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.ingredients li:marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.instructions h2 {
+  margin-bottom: 1.2rem;
+}
+.instructions ol {
+  list-style-position: outside;
+  padding: 0 0 1.5rem 1rem;
+}
+.instructions li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.instructions li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+.instructions li .step {
+  font-weight: 600;
+}
+
+.nutrition h2 {
+  margin-bottom: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
