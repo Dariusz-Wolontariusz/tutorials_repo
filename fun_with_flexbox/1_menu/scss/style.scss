@@ -1,8 +1,62 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    103deg,
+    rgba(238, 174, 202, 1) 48%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  // overflow-x: hidden;
 }
+
+.nav__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+a {
+  font-size: 1em;
+  font-weight: 100;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.nav-flex {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    display: flex;
+  }
+
+  li {
+    flex: 3;
+
+    &.social {
+      flex: 1;
+    }
+  }
+}
+
+@import '_tablet';

@@ -1,7 +1,67 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(103deg, rgb(238, 174, 202) 48%, rgb(148, 187, 233) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.nav__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+a {
+  font-size: 1em;
+  font-weight: 100;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-flex ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  display: flex;
+}
+.nav-flex li {
+  flex: 3;
+}
+.nav-flex li.social {
+  flex: 1;
+}
+
+@media (max-width: 1000px) {
+  .nav-flex ul {
+    flex-wrap: wrap;
+  }
+  .nav-flex ul li {
+    flex: 1 1 50%;
+  }
+  .nav-flex ul li.social {
+    flex: 1 1 25%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-flex ul li {
+    flex: 1 1 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

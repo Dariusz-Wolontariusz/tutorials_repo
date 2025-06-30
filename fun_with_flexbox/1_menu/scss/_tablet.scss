@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+  .nav-flex {
+    ul {
+      flex-wrap: wrap;
+
+      li {
+        flex: 1 1 50%;
+
+        &.social {
+          flex: 1 1 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-flex {
+    ul {
+      li {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
