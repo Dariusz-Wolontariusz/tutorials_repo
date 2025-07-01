@@ -11,8 +11,13 @@
 
 <body>
   <div class="nav__container">
+    <header class="top">
+      <h1><a href="#">Flexbox fun with Darek</a></h1>
+    </header>
     <nav class="nav-flex">
+      <a href="#" class="toggle-nav">&#9776;</a>
       <ul>
+
         <li><a href="#">Item 01</a></li>
         <li><a href="#">Item 02</a></li>
         <li><a href="#">Item 03</a></li>
@@ -25,6 +30,42 @@
         <li class="social"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </nav>
+    <section class="hero__image">
+      <img src="https://picsum.photos/1200/800" alt="random image">
+    </section>
+
+    <section class="details">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore provident id recusandae
+        exercitationem adipisci consectetur aut eius ut accusamus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam vel enim voluptates velit facere!
+      </p>
+    </section>
+
+    <section class="signup">
+      <form action="" class="signup">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="Sign me up!">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Darek Ce</p>
+    </footer>
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+
+    $(function () {
+      $('.toggleNav').on('click', function () {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+
+  </script>
   </div>
 
 </body>

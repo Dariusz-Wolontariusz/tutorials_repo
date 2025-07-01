@@ -13,10 +13,18 @@ body {
   min-height: 100vh;
 }
 
+img {
+  width: 100%;
+}
+
 .nav__container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem;
+}
+
+.toggle-nav {
+  display: none;
 }
 
 a {
@@ -47,6 +55,21 @@ a:hover {
 }
 .nav-flex li.social {
   flex: 1;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+}
+
+section,
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 100;
 }
 
 @media (max-width: 1000px) {
