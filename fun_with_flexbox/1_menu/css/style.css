@@ -17,7 +17,7 @@ img {
   width: 100%;
 }
 
-.nav__container {
+.container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem;
@@ -84,7 +84,18 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .nav-flex ul li {
-    flex: 1 1 100%;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
+  .container > * {
+    order: 999;
+  }
+}
+.toggle-nav {
+  display: block;
+}
+
+.nav-flex ul li {
+  flex: 1 1 100%;
 }/*# sourceMappingURL=style.css.map */

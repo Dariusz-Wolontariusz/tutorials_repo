@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <div class="nav__container">
+  <div class="container">
     <header class="top">
       <h1><a href="#">Flexbox fun with Darek</a></h1>
     </header>
     <nav class="nav-flex">
       <a href="#" class="toggle-nav">&#9776;</a>
-      <ul>
+      <ul class="nav__list">
 
         <li><a href="#">Item 01</a></li>
         <li><a href="#">Item 02</a></li>
@@ -56,15 +56,7 @@
 
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-
-    $(function () {
-      $('.toggleNav').on('click', function () {
-        $('.flex-nav ul').toggleClass('open');
-      });
-    });
-
+  <script src="main.js">
   </script>
   </div>
 

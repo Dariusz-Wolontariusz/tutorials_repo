@@ -15,11 +15,24 @@
 }
 
 @media (max-width: 500px) {
-  .nav-flex {
-    ul {
-      li {
-        flex: 1 1 100%;
-      }
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      order: 999;
+    }
+  }
+}
+
+.toggle-nav {
+  display: block;
+}
+
+.nav-flex {
+  ul {
+    li {
+      flex: 1 1 100%;
     }
   }
 }

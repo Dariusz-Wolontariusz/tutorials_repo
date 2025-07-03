@@ -22,7 +22,7 @@ img {
   width: 100%;
 }
 
-.nav__container {
+.container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem;
@@ -82,4 +82,4 @@ footer {
   font-weight: 100;
 }
 
-@import '_tablet';
+@import '_media-query';
