@@ -23,16 +23,43 @@
       order: 999;
     }
   }
-}
 
-.toggle-nav {
-  display: block;
-}
+  .toggle-nav {
+    display: block;
+  }
 
-.nav-flex {
-  ul {
-    li {
-      flex: 1 1 100%;
+  .top {
+    order: 2;
+  }
+
+  .hero__image {
+    order: 3;
+  }
+
+  .details {
+    order: 4;
+  }
+
+  .signup {
+    order: 5;
+  }
+
+  footer {
+    order: 6;
+  }
+
+  .nav-flex {
+    order: 1;
+    ul {
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+
+      li {
+        flex: 1 1 100%;
+      }
     }
   }
 }

@@ -91,11 +91,34 @@ footer {
   .container > * {
     order: 999;
   }
-}
-.toggle-nav {
-  display: block;
-}
-
-.nav-flex ul li {
-  flex: 1 1 100%;
+  .toggle-nav {
+    display: block;
+  }
+  .top {
+    order: 2;
+  }
+  .hero__image {
+    order: 3;
+  }
+  .details {
+    order: 4;
+  }
+  .signup {
+    order: 5;
+  }
+  footer {
+    order: 6;
+  }
+  .nav-flex {
+    order: 1;
+  }
+  .nav-flex ul {
+    display: none;
+  }
+  .nav-flex ul.open {
+    display: flex;
+  }
+  .nav-flex ul li {
+    flex: 1 1 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
