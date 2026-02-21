@@ -11,6 +11,6 @@
       "./*.html?raw": ["./*"]
     }
   },
-  "include": ["examples/**/*.js", "examples/**/*.svelte"],
+  "include": ["examples/**/*.js", "examples/**/*.svelte", "examples/basic-math/src/arithmetic.ts", "examples/basic-math/src/arithmetic.test.ts"],
   "exclude": ["node_modules", "dist"]
 }
