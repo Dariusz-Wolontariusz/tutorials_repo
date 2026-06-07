@@ -1,0 +1,702 @@
+[
+  {
+    "id": "tp-001",
+    "name": "Nordvik Consulting AS",
+    "orgNumber": "915234801",
+    "riskScore": 12,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-002",
+    "name": "Fjordline Transport AS",
+    "orgNumber": "928104673",
+    "riskScore": 64,
+    "status": "pending"
+  },
+  {
+    "id": "tp-003",
+    "name": "Oslo Digital Services AS",
+    "orgNumber": "947812305",
+    "riskScore": 83,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-004",
+    "name": "Bergen Bygg Partner AS",
+    "orgNumber": "934560219",
+    "riskScore": 41,
+    "status": "pending"
+  },
+  {
+    "id": "tp-005",
+    "name": "Arctic Seafood Export AS",
+    "orgNumber": "912876430",
+    "riskScore": 22,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-006",
+    "name": "Viken Elektro AS",
+    "orgNumber": "986450127",
+    "riskScore": 78,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-007",
+    "name": "Trondheim IT Drift AS",
+    "orgNumber": "921345908",
+    "riskScore": 35,
+    "status": "pending"
+  },
+  {
+    "id": "tp-008",
+    "name": "Stavanger Oil Support AS",
+    "orgNumber": "945678231",
+    "riskScore": 56,
+    "status": "pending"
+  },
+  {
+    "id": "tp-009",
+    "name": "Lillehammer Regnskap AS",
+    "orgNumber": "978123640",
+    "riskScore": 9,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-010",
+    "name": "Tromsø Logistics AS",
+    "orgNumber": "963214875",
+    "riskScore": 91,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-011",
+    "name": "Mjøsa Matgrossist AS",
+    "orgNumber": "914782356",
+    "riskScore": 18,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-012",
+    "name": "Vestfold Webdesign AS",
+    "orgNumber": "937650182",
+    "riskScore": 47,
+    "status": "pending"
+  },
+  {
+    "id": "tp-013",
+    "name": "Hamar Helseklinikk AS",
+    "orgNumber": "925481760",
+    "riskScore": 26,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-014",
+    "name": "Kristiansand Marine AS",
+    "orgNumber": "971230486",
+    "riskScore": 72,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-015",
+    "name": "Alta Entreprenør AS",
+    "orgNumber": "958764213",
+    "riskScore": 58,
+    "status": "pending"
+  },
+  {
+    "id": "tp-016",
+    "name": "Sandnes Auto AS",
+    "orgNumber": "946120378",
+    "riskScore": 31,
+    "status": "pending"
+  },
+  {
+    "id": "tp-017",
+    "name": "Drammen Handel AS",
+    "orgNumber": "919283746",
+    "riskScore": 14,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-018",
+    "name": "Molde Teknikk AS",
+    "orgNumber": "933847120",
+    "riskScore": 68,
+    "status": "pending"
+  },
+  {
+    "id": "tp-019",
+    "name": "Narvik Industriservice AS",
+    "orgNumber": "967540182",
+    "riskScore": 86,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-020",
+    "name": "Ålesund Rådgivning AS",
+    "orgNumber": "982103457",
+    "riskScore": 24,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-021",
+    "name": "Bodø Renhold AS",
+    "orgNumber": "911204586",
+    "riskScore": 44,
+    "status": "pending"
+  },
+  {
+    "id": "tp-022",
+    "name": "Ski Software AS",
+    "orgNumber": "936789201",
+    "riskScore": 7,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-023",
+    "name": "Asker Finans AS",
+    "orgNumber": "955431287",
+    "riskScore": 81,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-024",
+    "name": "Larvik Byggservice AS",
+    "orgNumber": "973642801",
+    "riskScore": 39,
+    "status": "pending"
+  },
+  {
+    "id": "tp-025",
+    "name": "Kongsberg Mekanikk AS",
+    "orgNumber": "918765432",
+    "riskScore": 53,
+    "status": "pending"
+  },
+  {
+    "id": "tp-026",
+    "name": "Halden Data AS",
+    "orgNumber": "944321876",
+    "riskScore": 29,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-027",
+    "name": "Harstad Havbruk AS",
+    "orgNumber": "968201374",
+    "riskScore": 75,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-028",
+    "name": "Gjøvik Prosjekt AS",
+    "orgNumber": "927364015",
+    "riskScore": 20,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-029",
+    "name": "Fredrikstad Maskin AS",
+    "orgNumber": "981256743",
+    "riskScore": 62,
+    "status": "pending"
+  },
+  {
+    "id": "tp-030",
+    "name": "Moss Retail AS",
+    "orgNumber": "935712468",
+    "riskScore": 34,
+    "status": "pending"
+  },
+  {
+    "id": "tp-031",
+    "name": "Ringerike Transport AS",
+    "orgNumber": "957821304",
+    "riskScore": 88,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-032",
+    "name": "Eidsvoll Eiendom AS",
+    "orgNumber": "923456781",
+    "riskScore": 11,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-033",
+    "name": "Fauske Kraftservice AS",
+    "orgNumber": "976543210",
+    "riskScore": 46,
+    "status": "pending"
+  },
+  {
+    "id": "tp-034",
+    "name": "Sola Catering AS",
+    "orgNumber": "914365870",
+    "riskScore": 27,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-035",
+    "name": "Lørenskog Media AS",
+    "orgNumber": "943218765",
+    "riskScore": 59,
+    "status": "pending"
+  },
+  {
+    "id": "tp-036",
+    "name": "Ullensaker Lager AS",
+    "orgNumber": "969874512",
+    "riskScore": 73,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-037",
+    "name": "Karmøy Sveis AS",
+    "orgNumber": "932184760",
+    "riskScore": 38,
+    "status": "pending"
+  },
+  {
+    "id": "tp-038",
+    "name": "Sogndal Reiseliv AS",
+    "orgNumber": "956703214",
+    "riskScore": 16,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-039",
+    "name": "Nittedal Konsulent AS",
+    "orgNumber": "979135246",
+    "riskScore": 67,
+    "status": "pending"
+  },
+  {
+    "id": "tp-040",
+    "name": "Rana Mineral AS",
+    "orgNumber": "941076328",
+    "riskScore": 94,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-041",
+    "name": "Elverum Skogservice AS",
+    "orgNumber": "916283740",
+    "riskScore": 23,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-042",
+    "name": "Notodden Industri AS",
+    "orgNumber": "938451206",
+    "riskScore": 51,
+    "status": "pending"
+  },
+  {
+    "id": "tp-043",
+    "name": "Voss Utvikling AS",
+    "orgNumber": "967812340",
+    "riskScore": 19,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-044",
+    "name": "Orkland Maskin AS",
+    "orgNumber": "925607184",
+    "riskScore": 70,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-045",
+    "name": "Grimstad Handel AS",
+    "orgNumber": "972048631",
+    "riskScore": 42,
+    "status": "pending"
+  },
+  {
+    "id": "tp-046",
+    "name": "Horten Teknologi AS",
+    "orgNumber": "949581263",
+    "riskScore": 5,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-047",
+    "name": "Steinkjer Landbruk AS",
+    "orgNumber": "918430756",
+    "riskScore": 61,
+    "status": "pending"
+  },
+  {
+    "id": "tp-048",
+    "name": "Levanger Omsorg AS",
+    "orgNumber": "936257104",
+    "riskScore": 33,
+    "status": "pending"
+  },
+  {
+    "id": "tp-049",
+    "name": "Namsos Fiskeri AS",
+    "orgNumber": "980741325",
+    "riskScore": 79,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-050",
+    "name": "Arendal Arkitekt AS",
+    "orgNumber": "954618230",
+    "riskScore": 25,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-051",
+    "name": "Risør Design AS",
+    "orgNumber": "917305864",
+    "riskScore": 36,
+    "status": "pending"
+  },
+  {
+    "id": "tp-052",
+    "name": "Tønsberg Invest AS",
+    "orgNumber": "931486207",
+    "riskScore": 90,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-053",
+    "name": "Mandal Service AS",
+    "orgNumber": "974208613",
+    "riskScore": 15,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-054",
+    "name": "Oppdal Drift AS",
+    "orgNumber": "946372018",
+    "riskScore": 48,
+    "status": "pending"
+  },
+  {
+    "id": "tp-055",
+    "name": "Lillestrøm Data AS",
+    "orgNumber": "963850124",
+    "riskScore": 21,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-056",
+    "name": "Bærum Analyse AS",
+    "orgNumber": "982640517",
+    "riskScore": 66,
+    "status": "pending"
+  },
+  {
+    "id": "tp-057",
+    "name": "Nesodden Miljø AS",
+    "orgNumber": "934015678",
+    "riskScore": 30,
+    "status": "pending"
+  },
+  {
+    "id": "tp-058",
+    "name": "Frogn Bygg AS",
+    "orgNumber": "958302741",
+    "riskScore": 84,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-059",
+    "name": "Egersund Nett AS",
+    "orgNumber": "921670438",
+    "riskScore": 13,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-060",
+    "name": "Bryne Mek AS",
+    "orgNumber": "975431206",
+    "riskScore": 55,
+    "status": "pending"
+  },
+  {
+    "id": "tp-061",
+    "name": "Time Transport AS",
+    "orgNumber": "944780312",
+    "riskScore": 37,
+    "status": "pending"
+  },
+  {
+    "id": "tp-062",
+    "name": "Klepp Utleie AS",
+    "orgNumber": "912350687",
+    "riskScore": 71,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-063",
+    "name": "Jæren Regnskap AS",
+    "orgNumber": "968741530",
+    "riskScore": 8,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-064",
+    "name": "Askøy Marine AS",
+    "orgNumber": "937205184",
+    "riskScore": 45,
+    "status": "pending"
+  },
+  {
+    "id": "tp-065",
+    "name": "Øygarden Energi AS",
+    "orgNumber": "956418372",
+    "riskScore": 76,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-066",
+    "name": "Knarvik Elektro AS",
+    "orgNumber": "919605743",
+    "riskScore": 28,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-067",
+    "name": "Florø Havservice AS",
+    "orgNumber": "983260415",
+    "riskScore": 52,
+    "status": "pending"
+  },
+  {
+    "id": "tp-068",
+    "name": "Førde Konsulent AS",
+    "orgNumber": "946801257",
+    "riskScore": 17,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-069",
+    "name": "Stryn Turisme AS",
+    "orgNumber": "971645028",
+    "riskScore": 63,
+    "status": "pending"
+  },
+  {
+    "id": "tp-070",
+    "name": "Ulstein Verftservice AS",
+    "orgNumber": "925318746",
+    "riskScore": 82,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-071",
+    "name": "Volda Media AS",
+    "orgNumber": "938720514",
+    "riskScore": 40,
+    "status": "pending"
+  },
+  {
+    "id": "tp-072",
+    "name": "Ørsta Handel AS",
+    "orgNumber": "914806372",
+    "riskScore": 6,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-073",
+    "name": "Kristiansund Supply AS",
+    "orgNumber": "967254801",
+    "riskScore": 69,
+    "status": "pending"
+  },
+  {
+    "id": "tp-074",
+    "name": "Averøy Fisk AS",
+    "orgNumber": "952480136",
+    "riskScore": 87,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-075",
+    "name": "Sunndal Metall AS",
+    "orgNumber": "981034672",
+    "riskScore": 54,
+    "status": "pending"
+  },
+  {
+    "id": "tp-076",
+    "name": "Rauma Prosjekt AS",
+    "orgNumber": "936174520",
+    "riskScore": 32,
+    "status": "pending"
+  },
+  {
+    "id": "tp-077",
+    "name": "Frøya Havbruk AS",
+    "orgNumber": "918257403",
+    "riskScore": 74,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-078",
+    "name": "Hitra Service AS",
+    "orgNumber": "945063218",
+    "riskScore": 10,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-079",
+    "name": "Melhus Bygg AS",
+    "orgNumber": "972136084",
+    "riskScore": 43,
+    "status": "pending"
+  },
+  {
+    "id": "tp-080",
+    "name": "Stjørdal Flyservice AS",
+    "orgNumber": "958410726",
+    "riskScore": 57,
+    "status": "pending"
+  },
+  {
+    "id": "tp-081",
+    "name": "Verdal Industri AS",
+    "orgNumber": "923780461",
+    "riskScore": 80,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-082",
+    "name": "Inderøy Mat AS",
+    "orgNumber": "941205876",
+    "riskScore": 24,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-083",
+    "name": "Sortland Retail AS",
+    "orgNumber": "976018432",
+    "riskScore": 49,
+    "status": "pending"
+  },
+  {
+    "id": "tp-084",
+    "name": "Hadsel Transport AS",
+    "orgNumber": "934682017",
+    "riskScore": 65,
+    "status": "pending"
+  },
+  {
+    "id": "tp-085",
+    "name": "Svolvær Reiseliv AS",
+    "orgNumber": "968530124",
+    "riskScore": 18,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-086",
+    "name": "Leknes Eiendom AS",
+    "orgNumber": "912864350",
+    "riskScore": 77,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-087",
+    "name": "Mo i Rana Data AS",
+    "orgNumber": "955270618",
+    "riskScore": 39,
+    "status": "pending"
+  },
+  {
+    "id": "tp-088",
+    "name": "Mosjøen Trevare AS",
+    "orgNumber": "981623047",
+    "riskScore": 27,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-089",
+    "name": "Brønnøysund Register AS",
+    "orgNumber": "927014685",
+    "riskScore": 50,
+    "status": "pending"
+  },
+  {
+    "id": "tp-090",
+    "name": "Sandnessjøen Supply AS",
+    "orgNumber": "946735018",
+    "riskScore": 85,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-091",
+    "name": "Hammerfest Energi AS",
+    "orgNumber": "973205641",
+    "riskScore": 60,
+    "status": "pending"
+  },
+  {
+    "id": "tp-092",
+    "name": "Kirkenes Arctic AS",
+    "orgNumber": "919746305",
+    "riskScore": 92,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-093",
+    "name": "Vadsø Service AS",
+    "orgNumber": "938064127",
+    "riskScore": 22,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-094",
+    "name": "Lakselv Handel AS",
+    "orgNumber": "967308214",
+    "riskScore": 46,
+    "status": "pending"
+  },
+  {
+    "id": "tp-095",
+    "name": "Karasjok Kultur AS",
+    "orgNumber": "954827630",
+    "riskScore": 11,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-096",
+    "name": "Kautokeino Drift AS",
+    "orgNumber": "926401857",
+    "riskScore": 73,
+    "status": "flagged"
+  },
+  {
+    "id": "tp-097",
+    "name": "Longyearbyen Logistikk AS",
+    "orgNumber": "982750416",
+    "riskScore": 58,
+    "status": "pending"
+  },
+  {
+    "id": "tp-098",
+    "name": "Svalbard Tech AS",
+    "orgNumber": "945812063",
+    "riskScore": 29,
+    "status": "cleared"
+  },
+  {
+    "id": "tp-099",
+    "name": "Nordkapp Tur AS",
+    "orgNumber": "971064538",
+    "riskScore": 67,
+    "status": "pending"
+  },
+  {
+    "id": "tp-100",
+    "name": "Finnmark Entreprenør AS",
+    "orgNumber": "936508721",
+    "riskScore": 89,
+    "status": "flagged"
+  }
+]
