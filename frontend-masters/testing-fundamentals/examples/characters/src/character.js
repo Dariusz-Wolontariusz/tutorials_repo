@@ -19,7 +19,7 @@ export class Character extends Person {
     this.constitution = rollDice(4, 6);
   }
 
-  levelUp() {
+  levelUp(Character) {
     this.level++;
     this.lastModified = new Date();
   }

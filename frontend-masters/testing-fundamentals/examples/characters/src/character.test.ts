@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Character } from './character.js';
+import { Character, levelUp } from './character.js';
 import { Person } from './person.js';
 
 describe('Character', () => {
@@ -22,7 +22,16 @@ describe('Character', () => {
     });
   });
 
-  it.todo('should allow you to increase the level', () => {});
+  it('should allow you to increase the level', () => {
+    const forgot = new Character('Forgot', 'Shadowheart', 'Rogue');
+    forgot.levelUp();
+    expect(forgot.level).toBe(2);
+  });
 
-  it.todo('should update the last modified date when leveling up', () => {});
+  it('should update the last modified date when leveling up', () => {
+    const forgot = new Character('Forgot', 'Shadowheart', 'Rogue');
+    const initialLastModified = forgot.lastModified;
+    forgot.levelUp();
+    expect(forgot.lastModified).not.toBe(initialLastModified);
+  });
 });
