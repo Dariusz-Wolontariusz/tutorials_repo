@@ -22,7 +22,7 @@ async function getTaxPayers(): Promise<TaxPayer[]> {
 
     return data;
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
   }
 
   return [];

@@ -1,6 +1,5 @@
 function printName(firstName, lastName) {
   console.log(`${firstName} ${lastName}`);
-
   return `${firstName} ${lastName}`;
 }
 
@@ -13,6 +12,17 @@ function printNTimes(n, value) {
 document.addEventListener("click", () => {
   console.log("Clicked");
 });
+setTimeout(() => console.log("Darek is awesome"), 3000);
 
-printName("Kyle", "Cook");
 printNTimes(5, "Hi");
+
+function main() {
+  printName("Kyle", "Cook");
+  test();
+}
+
+function test() {
+  printNTimes(5, "Bye");
+}
+
+main();

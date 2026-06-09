@@ -27,8 +27,8 @@ const projects = [
     href: "/modal-a11y",
   },
   {
-    title: "Sass Traversy",
-    href: "/sass-traversy",
+    title: "Search Users",
+    href: "/user-search",
   },
 ];
 
