@@ -1,3 +1,14 @@
+:root {
+  --bg: #fafafa;
+  --text: #1e293b;
+  --accent: #0d9488;
+  --accent-text: #ffffff;
+  --focus: #0e615a;
+  --hover: #095851;
+  --disabled: #1e293b;
+  --zebra: #00f4e03d;
+}
+
 :global(*),
 :global(*::after),
 :global(*::before) {
@@ -6,27 +17,113 @@
 
 :global(body) {
   margin: 0;
-  background-color: rgb(73, 146, 121);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 100vw;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mainContainer h1 {
+  color: var(--text);
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.75rem;
+  border: 3px solid var(--accent);
+  border-radius: 0.75rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.inputField:focus {
+  outline: 4px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .controllBtnContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.controllBtn {
+  width: auto;
+  font-size: 1.125rem;
+  background-color: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.controllBtn:hover:not(:disabled) {
+  background-color: var(--hover);
+}
+
+.controllBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .pageBtnContainer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  /* gap: 0.2rem; */
+}
+
+.pageBtnContainer {
+  color: var(--accent);
 }
 
 .pageBtn {
   height: fit-content;
   width: fit-content;
-
+  background-color: var(--bg);
+  color: var(--accent);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
 }
 
 .active {
-  background-color: green;
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.pageBtn:hover {
+  background-color: var(--hover);
+  color: var(--accent-text);
+}
+
+.tableWrapper {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.tableWrapper td,
+.tableWrapper th {
+  white-space: nowrap;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tableWrapper th {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.tableWrapper tbody tr:nth-child(even) {
+  background-color: var(--zebra);
 }

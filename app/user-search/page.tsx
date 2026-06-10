@@ -57,11 +57,12 @@ const UserSearch = () => {
   const windowEnd = windowStart + 2;
 
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <h1>User Search</h1>
       <label htmlFor="searchField">Search User</label>
       <input
         id="searchField"
+        className={styles.inputField}
         type="text"
         placeholder="Search user"
         onChange={(e) => {
@@ -77,10 +78,15 @@ const UserSearch = () => {
             You are on page {page} of {totalPages}
           </p>
           <div className={styles.controllBtnContainer}>
-            <button onClick={handlePrev} disabled={page === 1}>
+            <button
+              className={styles.controllBtn}
+              onClick={handlePrev}
+              disabled={page === 1}
+            >
               Prev
             </button>
             <button
+              className={styles.controllBtn}
               onClick={handleNext}
               disabled={page === Math.ceil(filteredList.length / page_size)}
             >
@@ -125,16 +131,27 @@ const UserSearch = () => {
           </div>
         </div>
       )}
-      <ul>
-        {visible &&
-          visible.map((user) => (
-            <li key={user.id}>
-              <div>{user.id}</div>
-              <div>{user.name}</div>
-              <div>{user.email}</div>
-            </li>
-          ))}
-      </ul>
+      <div className={styles.tableWrapper}>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email address</th>
+            </tr>
+          </thead>
+          <tbody>
+            {visible &&
+              visible.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.id}</td>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
