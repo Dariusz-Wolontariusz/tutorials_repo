@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
+import styles from "./styles.module.css";
 
 type Person = {
   id: number;
@@ -50,8 +51,10 @@ const UserSearch = () => {
   const handlePrev = () => setPage(page - 1);
   const handleNext = () => setPage(page + 1);
   const totalPages = Math.ceil(filteredList.length / page_size);
-  const pageArr = new Array(totalPages);
-  console.log(pageArr);
+  const pageArr = Array.from({ length: totalPages }, (value, idx) => idx + 1);
+  console.log("pageArr", pageArr);
+  const windowStart = Math.max(page - 1, 1);
+  const windowEnd = windowStart + 2;
 
   return (
     <div>
@@ -73,18 +76,53 @@ const UserSearch = () => {
           <p>
             You are on page {page} of {totalPages}
           </p>
-          <button onClick={handlePrev} disabled={page === 1}>
-            Prev
-          </button>
-          {filteredList.map((record, idx) => (
-            <div key={idx}></div>
-          ))}
-          <button
-            onClick={handleNext}
-            disabled={page === Math.ceil(filteredList.length / page_size)}
-          >
-            Next
-          </button>
+          <div className={styles.controllBtnContainer}>
+            <button onClick={handlePrev} disabled={page === 1}>
+              Prev
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={page === Math.ceil(filteredList.length / page_size)}
+            >
+              Next
+            </button>
+          </div>
+          <div className={styles.pageBtnContainer}>
+            <button
+              className={`${styles.pageBtn} ${page === 1 ? styles.active : ""}`}
+              onClick={() => setPage(1)}
+            >
+              1
+            </button>
+            {windowStart > 2 && <span>...</span>}
+
+            {pageArr &&
+              pageArr
+                .filter(
+                  (num) =>
+                    num >= windowStart &&
+                    num <= windowEnd &&
+                    num !== 1 &&
+                    num !== totalPages,
+                )
+                .map((pageNumber) => (
+                  <div key={pageNumber}>
+                    <button
+                      className={`${styles.pageBtn} ${page === pageNumber ? styles.active : ""}`}
+                      onClick={() => setPage(pageNumber)}
+                    >
+                      {pageNumber}
+                    </button>
+                  </div>
+                ))}
+            {windowEnd < totalPages - 1 && <span>...</span>}
+            <button
+              className={`${styles.pageBtn} ${page === pageArr.at(-1) ? styles.active : ""}`}
+              onClick={() => setPage(pageArr.at(-1) ?? 1)}
+            >
+              {pageArr.at(-1)}
+            </button>
+          </div>
         </div>
       )}
       <ul>

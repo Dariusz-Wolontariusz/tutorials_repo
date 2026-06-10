@@ -1,0 +1,32 @@
+:global(*),
+:global(*::after),
+:global(*::before) {
+  box-sizing: border-box;
+}
+
+:global(body) {
+  margin: 0;
+  background-color: rgb(73, 146, 121);
+}
+
+.controllBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pageBtn {
+  height: fit-content;
+  width: fit-content;
+
+}
+
+.active {
+  background-color: green;
+}
