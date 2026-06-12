@@ -29,7 +29,7 @@ const UserSearch = () => {
   const [searchWord, setSearchWord] = useState<string>("");
   const [usersList, setUsersList] = useState<Person[]>([]);
   const [page, setPage] = useState<number>(1);
-  const page_size = 50;
+  const [pageSize, setPageSize] = useState<number>(50);
 
   useEffect(() => {
     const load = async () => {
@@ -46,11 +46,11 @@ const UserSearch = () => {
     user.name.toLowerCase().includes(searchWord.toLowerCase()),
   );
 
-  const startIndex = (page - 1) * page_size;
-  const visible = filteredList.slice(startIndex, startIndex + page_size);
+  const startIndex = (page - 1) * pageSize;
+  const visible = filteredList.slice(startIndex, startIndex + pageSize);
   const handlePrev = () => setPage(page - 1);
   const handleNext = () => setPage(page + 1);
-  const totalPages = Math.ceil(filteredList.length / page_size);
+  const totalPages = Math.ceil(filteredList.length / pageSize);
   const pageArr = Array.from({ length: totalPages }, (value, idx) => idx + 1);
   console.log("pageArr", pageArr);
   const windowStart = Math.max(page - 1, 1);
@@ -58,25 +58,51 @@ const UserSearch = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <h1>User Search</h1>
-      <label htmlFor="searchField">Search User</label>
-      <input
-        id="searchField"
-        className={styles.inputField}
-        type="text"
-        placeholder="Search user"
-        onChange={(e) => {
-          setSearchWord(e.target.value);
-          setPage(1);
-        }}
-        value={searchWord}
-      />
+      <h1>Customer Search</h1>
+      <div className={styles.searchGroup}>
+        <label htmlFor="searchField">Search User</label>
+        <input
+          id="searchField"
+          className={styles.inputField}
+          type="text"
+          placeholder="Search user"
+          onChange={(e) => {
+            setSearchWord(e.target.value);
+            setPage(1);
+          }}
+          value={searchWord}
+        />
+      </div>
+
+      {/* matches */}
+
       {filteredList && (
-        <div>
-          <p>Found {filteredList.length} matches</p>
-          <p>
-            You are on page {page} of {totalPages}
-          </p>
+        <div className={styles.matchesContainer}>
+          <p>Found {filteredList.length} matches.</p>
+          <div className={styles.selectAmountItemsContainer}>
+            <label htmlFor="selectAmoutItems">Items per page:</label>
+            <select
+              className={styles.selectAmountItems}
+              id="selectAmoutItems"
+              onChange={(e) => {
+                setPageSize(+e.target.value);
+                setPage(1);
+              }}
+              defaultValue={50}
+            >
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="75">75</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+      )}
+
+      {/*top buttons */}
+
+      {filteredList && (
+        <div className={styles.buttonContainer}>
           <div className={styles.controllBtnContainer}>
             <button
               className={styles.controllBtn}
@@ -85,52 +111,64 @@ const UserSearch = () => {
             >
               Prev
             </button>
+            {/* page buttons */}
+
+            <div className={styles.pageBtnContainer}>
+              <button
+                className={`${styles.pageBtn} ${page === 1 ? styles.active : ""}`}
+                onClick={() => setPage(1)}
+              >
+                1
+              </button>
+
+              {windowStart > 2 && <span>...</span>}
+
+              {pageArr &&
+                pageArr
+                  .filter(
+                    (num) =>
+                      num >= windowStart &&
+                      num <= windowEnd &&
+                      num !== 1 &&
+                      num !== totalPages,
+                  )
+                  .map((pageNumber) => (
+                    <div key={pageNumber}>
+                      <button
+                        className={`${styles.pageBtn} ${
+                          page === pageNumber ? styles.active : ""
+                        }`}
+                        onClick={() => setPage(pageNumber)}
+                      >
+                        {pageNumber}
+                      </button>
+                    </div>
+                  ))}
+
+              {windowEnd < totalPages - 1 && <span>...</span>}
+
+              <button
+                className={`${styles.pageBtn} ${
+                  page === pageArr.at(-1) ? styles.active : ""
+                }`}
+                onClick={() => setPage(pageArr.at(-1) ?? 1)}
+              >
+                {pageArr.at(-1)}
+              </button>
+            </div>
+
             <button
               className={styles.controllBtn}
               onClick={handleNext}
-              disabled={page === Math.ceil(filteredList.length / page_size)}
+              disabled={page === Math.ceil(filteredList.length / pageSize)}
             >
               Next
             </button>
           </div>
-          <div className={styles.pageBtnContainer}>
-            <button
-              className={`${styles.pageBtn} ${page === 1 ? styles.active : ""}`}
-              onClick={() => setPage(1)}
-            >
-              1
-            </button>
-            {windowStart > 2 && <span>...</span>}
-
-            {pageArr &&
-              pageArr
-                .filter(
-                  (num) =>
-                    num >= windowStart &&
-                    num <= windowEnd &&
-                    num !== 1 &&
-                    num !== totalPages,
-                )
-                .map((pageNumber) => (
-                  <div key={pageNumber}>
-                    <button
-                      className={`${styles.pageBtn} ${page === pageNumber ? styles.active : ""}`}
-                      onClick={() => setPage(pageNumber)}
-                    >
-                      {pageNumber}
-                    </button>
-                  </div>
-                ))}
-            {windowEnd < totalPages - 1 && <span>...</span>}
-            <button
-              className={`${styles.pageBtn} ${page === pageArr.at(-1) ? styles.active : ""}`}
-              onClick={() => setPage(pageArr.at(-1) ?? 1)}
-            >
-              {pageArr.at(-1)}
-            </button>
-          </div>
         </div>
       )}
+
+      {/* table  */}
       <div className={styles.tableWrapper}>
         <table>
           <thead>
@@ -152,6 +190,74 @@ const UserSearch = () => {
           </tbody>
         </table>
       </div>
+
+      {/* bottom buttons */}
+      {filteredList && (
+        <div className={styles.buttonContainer}>
+          <div className={styles.controllBtnContainer}>
+            <button
+              className={styles.controllBtn}
+              onClick={handlePrev}
+              disabled={page === 1}
+            >
+              Prev
+            </button>
+            {/* page buttons */}
+
+            <div className={styles.pageBtnContainer}>
+              <button
+                className={`${styles.pageBtn} ${page === 1 ? styles.active : ""}`}
+                onClick={() => setPage(1)}
+              >
+                1
+              </button>
+
+              {windowStart > 2 && <span>...</span>}
+
+              {pageArr &&
+                pageArr
+                  .filter(
+                    (num) =>
+                      num >= windowStart &&
+                      num <= windowEnd &&
+                      num !== 1 &&
+                      num !== totalPages,
+                  )
+                  .map((pageNumber) => (
+                    <div key={pageNumber}>
+                      <button
+                        className={`${styles.pageBtn} ${
+                          page === pageNumber ? styles.active : ""
+                        }`}
+                        onClick={() => setPage(pageNumber)}
+                      >
+                        {pageNumber}
+                      </button>
+                    </div>
+                  ))}
+
+              {windowEnd < totalPages - 1 && <span>...</span>}
+
+              <button
+                className={`${styles.pageBtn} ${
+                  page === pageArr.at(-1) ? styles.active : ""
+                }`}
+                onClick={() => setPage(pageArr.at(-1) ?? 1)}
+              >
+                {pageArr.at(-1)}
+              </button>
+            </div>
+
+            <button
+              className={styles.controllBtn}
+              onClick={handleNext}
+              disabled={page === Math.ceil(filteredList.length / pageSize)}
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

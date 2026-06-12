@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg: #fafafa;
   --text: #1e293b;
   --accent: #0d9488;
@@ -7,6 +7,17 @@
   --hover: #095851;
   --disabled: #1e293b;
   --zebra: #00f4e03d;
+} */
+
+:root {
+  --bg: #181022;
+  --text: #fdf4ff;
+  --accent: #f0abfc;
+  --accent-text: #2e1065;
+  --focus: #22d3ee;
+  --hover: #e879f9;
+  --disabled: #d6d3d1;
+  --zebra: #2a1838;
 }
 
 :global(*),
@@ -32,6 +43,7 @@
 
 .mainContainer h1 {
   color: var(--text);
+  text-align: center;
 }
 
 .inputField {
@@ -48,10 +60,36 @@
   outline-offset: 2px;
 }
 
+.matchesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectAmountItemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.selectAmountItems {
+  width: 5rem;
+  border: 3px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 .controllBtnContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -71,18 +109,15 @@
 }
 
 .controllBtn:disabled {
-  opacity: 0.5;
+  background-color: var(--disabled);
+  color: var(--accent-text);
   cursor: not-allowed;
 }
 
 .pageBtnContainer {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-end;
-  /* gap: 0.2rem; */
-}
-
-.pageBtnContainer {
   color: var(--accent);
 }
 
@@ -110,6 +145,7 @@
 .tableWrapper {
   overflow: auto;
   max-width: 100%;
+  max-height: 75vh;
 }
 
 .tableWrapper td,
@@ -122,8 +158,46 @@
 .tableWrapper th {
   background-color: var(--accent);
   color: var(--accent-text);
+  position: sticky;
+  top: 0;
 }
 
 .tableWrapper tbody tr:nth-child(even) {
   background-color: var(--zebra);
+}
+
+@media (min-width: 48rem) {
+  .mainContainer {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  .searchGroup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .matchesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .selectAmountItemsContainer label {
+    margin: 0;
+  }
+
+  .selectAmountItemsContainer {
+    flex-direction: row;
+  }
+
+  .pageBtnContainer {
+    display: flex;
+  }
+
+  .tableWrapper table {
+    width: 100%;
+  }
 }
